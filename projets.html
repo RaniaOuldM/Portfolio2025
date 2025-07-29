@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="en-tete"> 
+        <h1><a href="home.html">Mon PORTfolio</a></h1>
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Mes Projets</h2>
+        <article class="projets-autres">
+            <section class="TransportExpert">
+                <div class="logo-TransportExpert">
+                    <img src="images/TransportExpert_logo.png" alt="Logo TransportExpert">
+                </div>
+                <h3>Transport Expert</h3>
+                <p>
+                    Pendant l’été 2021, j’ai réalisé un projet avec mon père, chef d'une entreprise de transport, et ma mère,
+                    responsable RH. L’objectif était de créer un interface de recolte et d'organisation des données des salariés
+                    pour l’entreprise, Transport Expert, qui se faisaient jusqu'alors à travers WhatsApp. Pour ce faire, nous avons
+                    utilisé une plateforme NoCode, appelé AirTable. Nouveau pour nous, nous avons débuté par une période 
+                    d'apprentissage de la plateforme et de ses fonctionnalités. Ensuite, en fonction des besoins de l'entreprise, nous
+                    avons concu des tableaux, des vues, des formulaires, des automatisations ou encore des graphiques. 
+                    Cette solution à permis à l'entreprise de centraliser les informations des salariés, de faciliter l'accès aux 
+                    données et de gagner en efficacité. Encore utilisée aujourd'hui, cette solution ne cesse d'évoluer à travers les 
+                    efforts de mon père. Je suis très fière d'avoir pu contribuer à ce projet, qui a eu un impact positif sur 
+                    l'entreprise et sur le quotidien de mes parents. 
+                </p>
+            </section>
+        </article>
+        <div class="logo-Université">
+            <img src="images/logoIUTL1Noir_sansfond.png" alt="Logo Université">
+        </div>
+        <article class="projets-universitaires">
+            <section class="projet">
+                <h3>Distributeur d'eau intelligent pour rongeurs</h3>
+                <p>
+                    Dans le cadre de ma 2e année de BUT GEII, j’ai co-conçu un distributeur d’eau automatisé pour rongeurs, un projet 
+                    mené sur toute l’année en binôme. L’objectif : distribuer une goutte d’eau à chaque coup de langue détecté, tout 
+                    en permettant à l’utilisateur de visualiser la consommation de l’animal et de contrôler des paramètres comme le 
+                    débit. Nous avons commencé par analyser les besoins du client et rédiger un cahier des charges détaillé, puis 
+                    conçu toute la solution de A à Z : capteur capacitif (CapSense), pilotage d’une pompe péristaltique via driver 
+                    L293D, et intégration d’un microcontrôleur Cypress (CY8CKIT-059) pour gérer les signaux, les compteurs et la 
+                    communication UART avec le PC. Nous avons également travaillé avec PSoC Creator pour développer deux programmes : 
+                    l’un pour le pilotage moteur et la détection, l’autre pour la transmission des données à une interface PC. Ce 
+                    projet m’a appris à concevoir un système embarqué complet, à respecter des délais, à documenter une démarche 
+                    technique, et surtout à collaborer efficacement. J’y ai découvert l’importance de structurer son code, de tester 
+                    par itérations, et de rester adaptable quand les contraintes évoluent.
+                </p>
+                <div class="telechargement-rapport-projet">
+                    <button type="button">
+                        <a href="https://drive.google.com/file/d/1BYuLkSMPldHdfP6zsJmIucEqMURaRRpt/view?usp=share_link" target="_blank">Télécharger le rapport</a>
+                    </button>
+                </div>
+            </section>
+            <section class="projet">
+                <h3>Application web de gestion des séquences pédagogiques</h3>
+                <p>
+                    En 3e année de BUT GEII, j’ai participé, avec trois camarades, à la conception et au développement d’une application 
+                    web de gestion des séquences pédagogiques, dans le cadre d’un projet encadré sur plusieurs semaines. Nous avons 
+                    travaillé sur le sujet 4, qui portait sur l’ajout, la modification et la suppression de séquences rattachées à des 
+                    activités dans l’emploi du temps universitaire, à partir d’une base de données ADE partielle.<br>Notre application 
+                    permettait notamment de créer de nouvelles séquences, de consulter les volumes horaires par groupe et par type 
+                    d’enseignement (CM, TD, TP), et d’interagir avec la base tout en respectant sa structure initiale. Toutes les 
+                    opérations (INSERT, UPDATE, DELETE) étaient loguées automatiquement via des triggers SQL, et un écran permettait de 
+                    consulter ce journal sans modification possible.<br>Côté technique, nous avons utilisé HTML, CSS, JavaScript pour 
+                    le frontend, et PHP avec SQL pour le backend. Le projet m’a permis de consolider mes compétences en développement 
+                    full-stack, en particulier dans la manipulation de bases de données relationnelles, la gestion d’interfaces 
+                    dynamiques, mais aussi en travail d’équipe, en documentation technique, et en gestion de projet.
+                </p>
+            </section>
+            <section class="projet">
+                <h3>Application web de gestion de projets photovoltaïques - Solarity</h3>
+                <p>
+                    Dans le cadre de ma 3e année de BUT GEII, j’ai co-conçu SOLARITY, une application web Full-Stack dédiée à la gestion 
+                    commerciale et technique de projets photovoltaïques. Pensée pour répondre à différents rôles utilisateurs 
+                    (administrateur, technico-commercial, responsable de zone), elle propose une interface KANBAN pour suivre 
+                    l’avancement des projets, un espace de statistiques filtrables en temps réel, et permet l’édition automatisée de 
+                    rapports techniques au format PDF grâce à l’intégration de la bibliothèque PVLib.<br>Côté technique, nous avons 
+                    développé l’application en HTML, CSS, JavaScript pour le frontend, et en Python (Flask) pour le backend, avec une base 
+                    de données relationnelle gérée via SQLAlchemy. Nous avons également mis en place un système d’authentification sécurisé 
+                    et une interface d’administration pour gérer les utilisateurs, leurs rôles et leurs affectations géographiques.<br> 
+                    Ce projet m’a permis de renforcer mes compétences en architecture web, programmation orientée objet, intégration 
+                    d’API, gestion d’état applicatif, et en déploiement de solutions métier réalistes, proches d’un besoin client.
+                </p>
+                <div class="telechargement-rapport-projet">
+                    <button type="button">
+                        <a href="https://drive.google.com/file/d/1g4dwomCnfuP3N2SzMYdHZ2vSCYn5pJoh/view?usp=share_link" target="_blank">
+                            Vidéo de présentation de Solarity
+                        </a>
+                    </button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="plan-site">
+            <ul>
+                <li><a href="home.html">Page d'accueil</a></li>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </section>
+        <section class="mes-reseaux">
+            <div class="mail">
+                <a href="mailto:rania.ouldmohammed@gmail.com" target="_blank">
+                    <img src="images/email_logo.webp" alt="Email">
+                </a>
+            </div>
+            <div class="telephone">
+                <a href="tel:0664595907" target="_blank">
+                    <img src="images/telephone_logo.webp" alt="Telephone">
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/rania-ould-mohammed-b027b1256/" target="_blank">
+                    <img src="images/LinkedIn_logo.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="grimp">
+                <a href="https://academy.grimp.io/share?profile=opk9eO3-yDj7" target="_blank">
+                    <img src="images/grimp.io_logo.png" alt="Grimp">
+                </a>
+            </div>
+        </section>
+        <section class="mentions-legales">
+            <p>© 2025 Rania OULD MOHAMMED - Tous droits réservés<br>
+            Site développé par Rania OULD MOHAMMED<br>
+            Création : juillet 2025</p>
+        </section>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

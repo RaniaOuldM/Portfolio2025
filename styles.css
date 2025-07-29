@@ -1,0 +1,773 @@
+html, body{
+    background-color: #dac9a8;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a{
+    text-decoration: none;
+    color: #341207;
+}
+
+header a:hover{
+    color: #764c3c;
+    text-decoration: underline;
+}
+
+header a:active{
+    color: #b78567;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding: 30px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.en-tete h1{
+    font-size: 35px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.en-tete{
+    display: flex;
+    justify-content: space-between; /*pousse le titre à gauche et le menu à droite*/
+    align-items: center; /*aligne le titre et le menu verticalement au centre*/
+}
+
+.burger{
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+hr{
+    border: 4px solid #341207;
+    width: 100%;
+}
+
+.phrase-accroche p{
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+    margin-left: 50px;
+}
+
+.ma-photo img{
+    width: 100%; 
+    height: 612px; 
+    object-fit: cover;
+    object-position: 45%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #341207;
+    border-radius: 15px;
+}
+
+.ma-photo{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+}
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .en-tete h1{
+        font-size: 28px;
+        padding: 10px;
+        padding-left: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .burger{
+        display:block;
+        color:#341207
+    }
+    .burger.active{
+        color:#b78567;
+    }
+    .menu ul{
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        background-color:#dac9a8;
+        color:#341207;
+        border: solid 2px;
+        border-color: #341207;
+        position: absolute;
+        top: 70px;
+        right:0;
+        width: 90%;
+    }
+    .menu ul:hover{
+        color:#b78567;
+    }
+    .menu.active ul{
+        display: flex;
+    }
+    .phrase-accroche p{
+        font-size: 22px;
+        text-align:center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .ma-photo{
+        padding: 10px;
+        margin: 10px;
+    }
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .telechargement-CV{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .telechargement-CV button{
+        padding: 7px 10px; 
+        background-color: #1b0a04;
+        font-size: 7px;
+    }
+    .telechargement-CV button a{
+        font-size: 15px;
+    }
+    .plan-site li a{
+        padding: 0px;
+        margin: 0px;
+        gap:0px;
+    }
+    .plan-site ul{
+        display: flex;
+        flex-direction: column;
+        gap: -50px; 
+    }
+    .sur-moi{
+        width: 95%;
+        text-align: center;
+        margin-left: auto;  
+        margin-right: auto;
+    }
+    .sur-moi h2{
+        font-size: 30px;
+    }
+    .sur-moi h3{
+        font-size: 25px;
+        text-align: start;
+    }
+    main.pro {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pro h2{
+        font-size: 45px;
+    }
+    .experiences {
+        width: 95%;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .SNCF{
+        width: 95%;
+    }
+    .TRANE{
+        width: 95%;
+    }
+    .stageSNCF{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stage{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stage p{
+        font-weight: lighter;
+    }
+    .alternance{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .alternance p{
+        font-weight: lighter;
+    }
+    .evolution-technique, .evolution-technique1{
+        width: 95%;
+    }
+}
+
+.telechargement-CV button a{
+    text-decoration: none;
+    color:#dac9a8;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: light;
+}
+
+.telechargement-CV button a:hover{
+    color: #b78567;
+}
+
+.telechargement-CV button{
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+    border-width: 0;
+    border-radius: 80px;
+    padding: 25px 70px;
+}
+
+.telechargement-CV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.prenom{
+    color: #341207;
+    font-size: 35px;
+}
+
+.nom-famille{
+    color: #81a7a8;
+    font-size: 35px;
+}
+
+.aspiration{
+    color: #81a7a8;
+    font-style:normal;
+}
+
+.mail{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.mail img:hover{
+    padding:2px;
+}
+
+.mail img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+
+.telephone{
+    width: 30px;
+    height: 35px;
+    overflow: visible;
+}
+
+.telephone img:hover{
+    padding:2px; 
+}
+
+.telephone img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+
+.linkedin{
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.linkedin img:hover{
+    padding:2px;
+}
+
+.linkedin img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+
+.grimp{
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+}
+
+.grimp img:hover{
+    padding: 2px;
+}
+
+.grimp img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+
+.mes-reseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+footer{
+    color:#341207;
+    font-size: 18px;
+}
+
+.plan-site ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 10px;
+}
+
+.plan-site a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: #341207;
+}
+
+.plan-site a:hover{
+    color: #b78567;
+}
+
+.plan-site a:active{
+    color: #764c3c;
+}
+
+.mentions-legales p{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.sur-moi{
+    color:#341207;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 21px; 
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-weight: larger;
+    color:#341207;
+    font-family: sans-serif;
+}
+
+.parcours-scolaire{
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.reorientation{
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.ingenierie{
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.projet-pro{
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.projet-pro p a{
+    text-decoration: none;
+    color: #b78567;
+}
+
+.projet-pro p a:hover{
+    color: #341207;
+    text-decoration: underline;
+}
+
+.centre-interet{
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+h3{
+    padding-bottom: 0px;
+}
+
+main .pro{
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-SNCF img{
+    width: 150px;
+    height: 70px;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.SNCF div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-TRANE img{
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.TRANE div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiences{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    gap : 30px;
+}
+
+.SNCF h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.SNCF{
+    flex: 1;
+    margin: 10px;
+    font-size:22px;
+    color:#341207;
+    text-align: justify;
+    padding: 3px;
+}
+
+.TRANE h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.TRANE{
+    flex:1;
+    margin : 10px;
+    font-size:22px;
+    color:#341207;
+    text-align: justify;
+    padding: 3px;
+}
+
+.SNCF a, .TRANE a{
+    text-decoration: none;
+    color:#81a7a8;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 25px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.SNCF a:hover, .TRANE a:hover{
+    text-decoration: underline;
+}
+
+.telechargement-rapport button a{
+    text-decoration: none;
+    color:#dac9a8;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: light;
+}
+
+.telechargement-rapport button a:hover{
+    color: #b78567;
+}
+
+.telechargement-rapport button{
+    background-color: black;
+    border-color: black;
+    border-width: 0;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.telechargement-rapport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom: 50px;
+}
+
+.stageSNCF{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stage p{
+    font-size: 20px;
+    color: #341207;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.alternanceTRANE{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alternance p{
+    font-size: 20px;
+    color: #341207;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.projets-autres{
+    padding-top:30px;
+}
+
+.logo-TransportExpert img{
+    width: 400px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.TransportExpert div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TransportExpert{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    color:#341207;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.logo-Université img{
+    width: 400px;
+    height: 130px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.logo-Université{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.projets-universitaires{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    color:#341207
+}
+
+.projet{
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.telechargement-rapport-projet button a{
+    text-decoration: none;
+    color:#dac9a8;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: light;
+}
+
+.telechargement-rapport-projet button a:hover{
+    color: #b78567;
+}
+
+.telechargement-rapport-projet button{
+    background-color: black;
+    border-color: black;
+    border-width: 0;
+    border-radius: 80px;
+    padding: 13px 20px;
+}
+
+.telechargement-rapport-projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:0px;
+    padding-bottom: 10px;
+}
+
+.evolution-technique{
+    color:#341207;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.evolution-technique1{
+    color:#341207;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.evolution-technique h3{
+    font-size: 22px;
+}
+
+.competences{
+    flex: 1;
+}
+
+.formulaire form{
+    width: 80%;
+    gap: 15px;
+    padding: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    border-radius: 30px;
+    border:#1b0a04 solid 2px;
+    padding: 30px;
+    background-color: #341207;
+    color:#dac9a8;
+    text-align: center;
+    font-size: 18px;
+}
+
+input::placeholder{
+    color:#dac9a8;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+input:hover{
+    padding:35px;
+}
+
+textarea{
+    border-radius: 30px;
+    border:#1b0a04 solid 2px;
+    padding: 80px;
+    background-color: #341207;
+    color:#dac9a8;
+    text-align: center;
+    font-size: 18px;
+}
+
+textarea::placeholder{
+    color:#dac9a8;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+textarea:hover{
+    padding: 85px;
+}
+
+button{
+    background-color: #341207;
+    border:#1b0a04 solid 2px;
+    border-radius: 30px;
+    color:#dac9a8;
+    font-size: 20px; 
+    font-weight: bold;
+    width: 65%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+button:hover{
+    color:#764c3c;
+}

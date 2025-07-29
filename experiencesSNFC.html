@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAGE SNCF Réseau</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="en-tete"> 
+        <h1><a href="home.html">Mon PORTfolio</a></h1>
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Mon stage chez SNCF Réseau</h2>
+        <article class="stageSNCF">
+            <section class="stage">
+                <p>
+                    À la fin de ma deuxième année universitaire, j’ai effectué un stage du 15 avril au 5 juillet 2024 en bureau d’étude 
+                    à SNCF Réseau. Le sujet de mon stage portait sur l’amélioration de la sécurité et la mise en conformité d’un passage 
+                    à niveau. J’ai eu l’opportunité de travailler dans deux sections distinctes, me permettant de comprendre et de participer 
+                    à différentes étapes du processus de régénération des infrastructures ferroviaires. Débutant mon stage dans la section 
+                    Plans Techniques, chargée de la description fonctionnelle du projet, je l’ai terminé dans la section Documents d’Exécution 
+                    où j’ai conçu les schémas de câblage basés sur mon étude précédente.<br>Cette expérience m’a été profitable sur plusieurs 
+                    points. Cette période, divisée en deux, m’a permis de renforcer ma capacité à collaborer et communiquer au sein de 
+                    plusieurs équipes. De tels projets nécessitent une bonne coordination et communication entre les différentes sections pour
+                    leur succès. J’ai aussi dû faire preuve d’autonomie, favorisant mon aptitude à résoudre des problèmes techniques et 
+                    contribuant à mon avancée dans le projet donné.<br>Cette expérience m'a préparée à développer mes compétences techniques 
+                    et ma capacité à travailler en équipe.
+                </p>
+            </section>
+            <section class="Rapport">
+                <div class="telechargement-rapport">
+                    <button type="button">
+                        <a href="https://drive.google.com/file/d/18aHOdovcxhwf5qWoiEav9Be40unD_UsA/view?usp=share_link" target="_blank">Télécharger mon Rapport de Stage</a>
+                    </button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="plan-site">
+            <ul>
+                <li><a href="home.html">Page d'accueil</a></li>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </section>
+        <section class="mes-reseaux">
+            <div class="mail">
+                <a href="mailto:rania.ouldmohammed@gmail.com" target="_blank">
+                    <img src="images/email_logo.webp" alt="Email">
+                </a>
+            </div>
+            <div class="telephone">
+                <a href="tel:0664595907" target="_blank">
+                    <img src="images/telephone_logo.webp" alt="Telephone">
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/rania-ould-mohammed-b027b1256/" target="_blank">
+                    <img src="images/LinkedIn_logo.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="grimp">
+                <a href="https://academy.grimp.io/share?profile=opk9eO3-yDj7" target="_blank">
+                    <img src="images/grimp.io_logo.png" alt="Grimp">
+                </a>
+            </div>
+        </section>
+        <section class="mentions-legales">
+            <p>© 2025 Rania OULD MOHAMMED - Tous droits réservés<br>
+            Site développé par Rania OULD MOHAMMED<br>
+            Création : juillet 2025</p>
+        </section>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>    
+</body>
+</html>

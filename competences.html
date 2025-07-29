@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="en-tete"> 
+        <h1><a href="home.html">Mon PORTfolio</a></h1>
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Mon évolution technique</h2>
+        <section class="evolution-technique">
+            <div class="competences">
+                <h3>Réorientation & Projet AirTable</h3>
+                <p>
+                    Apprentissage et utilisation d'une plateforme NoCode, gestion de projet, adaptabilité face à différents projets
+                </p>
+            </div>
+            <div class="competences">
+                <h3>BUT1 / BUT2</h3>
+                <p>
+                    Schémas électronique, conception de schémas et circuits imprimés, programmation en C, soudage, utilisation de 
+                    logiciels de CAO, utilisation des logiciels UnityPro / VijeoDesigner / AtuoCAD / Zeolio
+                </p>
+            </div>
+            <div class="competences">
+                <h3>Projet Distributeur d'eau</h3>
+                <p>
+                    Conception d'un synoptique à partir d'un cahier des charges, Réalisation d'un projet de A à Z de la rentrée de la demande
+                    aux tests finaux du produit, travail d'équipe, gestion du temps et des ressources
+                </p>
+            </div>
+        </section>
+        <section class="evolution-technique1">
+            <div class="competences">
+                <h3>Projet "Gestion des Séquences"</h3>
+                <p>
+                    PHP, SQL, frontend, triggers, backend logique
+                </p>
+            </div>
+            <div class="competences">
+                <h3>Projet "SOLARITY"</h3>
+                <p>
+                    Full-Stack (HTML/CSS/JavaScript + Python Flask), authentification, sécurisation des données, génération de PDF dynamique
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="plan-site">
+            <ul>
+                <li><a href="home.html">Page d'accueil</a></li>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </section>
+        <section class="mes-reseaux">
+            <div class="mail">
+                <a href="mailto:rania.ouldmohammed@gmail.com" target="_blank">
+                    <img src="images/email_logo.webp" alt="Email">
+                </a>
+            </div>
+            <div class="telephone">
+                <a href="tel:0664595907" target="_blank">
+                    <img src="images/telephone_logo.webp" alt="Telephone">
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/rania-ould-mohammed-b027b1256/" target="_blank">
+                    <img src="images/LinkedIn_logo.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="grimp">
+                <a href="https://academy.grimp.io/share?profile=opk9eO3-yDj7" target="_blank">
+                    <img src="images/grimp.io_logo.png" alt="Grimp">
+                </a>
+            </div>
+        </section>
+        <section class="mentions-legales">
+            <p>© 2025 Rania OULD MOHAMMED - Tous droits réservés<br>
+            Site développé par Rania OULD MOHAMMED<br>
+            Création : juillet 2025</p>
+        </section>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTERNANCE TRANE France</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="en-tete"> 
+        <h1><a href="home.html">Mon PORTfolio</a></h1>
+        <button class="burger" aria-label="Menu">
+            ☰
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Mon alternance chez TRANE France</h2>
+        <article class="alternanceTRANE">
+            <section class="alternance">
+                <p>
+                    Au cours de ma troisième année universitaire, j’ai eu la chance d’intégrer le groupe TRANE TECHNOLOGIES en alternance, 
+                    plus précisément au sein de sa filiale TRANE France. Ce groupe international, reconnu pour ses solutions innovantes en 
+                    CVC (Chauffage, Ventilation et Climatisation), intervient dans divers secteurs tels que l’industrie, le médical, ou 
+                    encore le tertiaire. TRANE propose également des systèmes de régulation avancés permettant l’automatisation de nombreuses
+                    machines, ainsi que des solutions énergétiques durables. Dans le cadre de mon alternance, mon rôle consiste 
+                    principalement à accompagner mon tuteur dans la gestion et le suivi de différents projets. Cette expérience, inscrite 
+                    dans le domaine du frigoriste, m’a demandé une adaptation rapide pour maîtriser des notions techniques spécifiques, 
+                    essentielles pour comprendre et modifier des schémas hydrauliques, appelés "PID", afin d’y intégrer des sondes de 
+                    température ou de pression. Je suis également amené à analyser des dossiers techniques préparés par les commerciaux 
+                    en amont des projets, établir des listes de points physiques automates, concevoir des architectures de bus, et participer 
+                    à des tâches de supervision. Par ailleurs, j’ai régulièrement communiqué directement avec les clients pour expliquer mes 
+                    choix techniques et justifier les solutions proposées, tout en collaborant étroitement avec mes collègues pour obtenir 
+                    des informations complémentaires ou approfondir ma compréhension des projets. Ces interactions m’ont permis de développer 
+                    mes compétences en communication technique, en gestion de projet et en résolution de problèmes, tout en renforçant ma 
+                    capacité à m’adapter à des environnements techniques complexes et exigeants.
+                </p>
+            </section>
+            <section class="Rapport">
+                <div class="telechargement-rapport">
+                    <button type="button">
+                        <a href="https://drive.google.com/file/d/1p2k0Ep8-W5azQMrWE84c0AsGybKmCxKK/view?usp=share_link" target="_blank">Télécharger mon Rapport d'Alternance</a>
+                    </button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="plan-site">
+            <ul>
+                <li><a href="home.html">Page d'accueil</a></li>
+                <li><a href="sur-moi.html">Sur moi</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </section>
+        <section class="mes-reseaux">
+            <div class="mail">
+                <a href="mailto:rania.ouldmohammed@gmail.com" target="_blank">
+                    <img src="images/email_logo.webp" alt="Email">
+                </a>
+            </div>
+            <div class="telephone">
+                <a href="tel:0664595907" target="_blank">
+                    <img src="images/telephone_logo.webp" alt="Telephone">
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/rania-ould-mohammed-b027b1256/" target="_blank">
+                    <img src="images/LinkedIn_logo.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="grimp">
+                <a href="https://academy.grimp.io/share?profile=opk9eO3-yDj7" target="_blank">
+                    <img src="images/grimp.io_logo.png" alt="Grimp">
+                </a>
+            </div>
+        </section>
+        <section class="mentions-legales">
+            <p>© 2025 Rania OULD MOHAMMED - Tous droits réservés<br>
+            Site développé par Rania OULD MOHAMMED<br>
+            Création : juillet 2025</p>
+        </section>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>    
+</body>
+</html>
